@@ -17,7 +17,7 @@ if (!users) {
 
 function saveToLocalStorage( nombre,apellido,edad, correo,contraseña) {
     
-alert("hola");
+alert("Registrando");
 	var user = {
 	 nombre,
      apellido,

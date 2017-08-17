@@ -1,12 +1,30 @@
+function getGET(){
+   var loc = document.location.href;
+   var getString = loc.split('?')[1];
+   var GET = getString.split('&');
+   var get = {};
+
+   for(var i = 0, l = GET.length; i < l; i++){
+      var tmp = GET[i].split('=');
+      get[tmp[0]] = unescape(decodeURI(tmp[1]));
+   }
+   return get;
+}
+
+
+
+
 window.onload = function () {
           var usuarioentra = "maria";
             var localStorageKeyName = 'data';
 
+            var get = getGET();
+             document.getElementById("nombre").value = get.nombre;
                loadFromLocalStorage();
 
             document.querySelector("#btn-add").addEventListener('click', function () {
-                var name = document.getElementById("name"),
-                    job = document.getElementById("job");
+                var name = document.getElementById("nombre"),
+                    job = document.getElementById("Detalle");
 
 
                   alert('registrando' + name.value  );
@@ -109,3 +127,6 @@ window.onload = function () {
 
           }
       }
+
+
+
