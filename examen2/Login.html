@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body class="cuerpo">
+    <header>
+        <nav class="navbar navbar-inverse navbar-stactic-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-target="#navegacion" data-toggle="collapse" type="button">
+                                            <span class="sr-only">
+                                                Desplegar/Ocultar Menu
+                                            </span>
+                                            <span class="icon-bar">
+                                            </span>
+                                            <span class="icon-bar">
+                                            </span>
+                                            <span class="icon-bar">
+                                            </span>
+                                        </button>
+                    <a class="navbar-brand" href="Login.html">
+                        <img alt="..." class="img-circle" id="logo" src="img/logo.png">
+                        </img>
+                    </a>
+                </div>
+                <!---inicia Menu--->
+                <div class="collapse navbar-collapse" id="navegacion">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="Login.html">
+                                               Login
+                                                </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html">
+                                                Registro
+                                                </a>
+                        </li>
+                        <li>
+                            <a href="post.html">
+                                                Post
+                                                </a>
+                        </li>
+                        <li><a href="crearpost.html">Crear Post</a></li>
+                    </ul>
+                    <form action="" class="navbar-form navbar-right" role="search">
+                        <div class="grupo-de-formularios">
+                            <input "" class="form-control" div="" placeholder="buscar" type="text">
+                            <button class="btn btn-primary" type="submit">
+                                                        <span class=" glyphicon glyphicon-search">
+                                                        </span>
+                                                    </button>
+                            </input>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="row">
+        <div class="col-xs-12 col-md-8 col-lg-2">
+            <div class="formularios-login"></div>
+            <input class="form-login" type="text" placeholder="Usuario" id="user">
+            <input class="form-login" type="text" placeholder=" contraseña" id=pass>
+            <button onclick="obtener_localStorage();" class="form-login"href='javascript:;' >
+                ingresar
+            </button>
+            <button class="form-login">
+                cancelar
+            </button>
+        </div>
+    </div>
+    <script src="js/jquery.js">
+
+
+    </script>
+    <script src="js/bootstrap.js">
+
+
+    </script>
+    <script language="JavaScript" type="text/javascript" src="js/usuarios.js"></script>
+
+</body>
+
+</html>

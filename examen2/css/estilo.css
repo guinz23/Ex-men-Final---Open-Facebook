@@ -1,0 +1,29 @@
+.img-circle {
+    width: 100px;
+    margin-top: -25px;
+    margin-left: -19px;
+}
+
+.formularios {
+    width: 100%;
+    margin-left: 60%;
+}
+
+.formulario {
+    margin-left: 10%;
+    margin-top: 2%;
+    border: none;
+    float: left;
+    border:black 5px outset;
+}
+.boton{
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: dodgerblue;
+#facelogo{
+    margin-left:30%;
+    width: 50%;
+    border-radius:50%;
+}
